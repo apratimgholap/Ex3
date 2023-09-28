@@ -7,7 +7,7 @@ const cors = require("cors");
 // Allows custom logging format
 const morgan = require("morgan");
 
-// app.use(express.static("dist"));
+app.use(express.static("dist"));
 app.use(cors());
 
 morgan.token("req-body", (request) => {
